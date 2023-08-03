@@ -4,6 +4,17 @@ Python data structures package written in Rust.
 
 Currently available: priority heap, deque, stack.
 
+To use:
+1. Download/clone this repo
+2. Setup a venv `python3 -m venv venv`
+3. Activate the venv `source ./venv/bin/activate`
+4. Important: if you have a conda environment activated you must deactivate it: `conda deactivate`
+5. Make sure you have Rust installed
+6. `pip install maturin`
+7. `maturin develop`
+8. `rustystructs` should be installed in your venv as a Python package, now you can just do `import rustystructs` in your Python file and start coding.
+9. See either the code in `benchmarking/` or `test/` for syntax examples on how to use the package.
+
 For each of these you can have data types of either integer or string.
 
 These Rust implementations perform significantly faster than their Python counterparts.
